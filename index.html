@@ -10,7 +10,7 @@
 <section><h2>늑대 · 0.85초</h2><audio id="wolf" controls playsinline preload="metadata" aria-label="늑대 믹스"><source src="wolf-game.wav" type="audio/wav"></audio></section>
 <section><h2>독수리 · 0.65초</h2><audio id="eagle" controls playsinline preload="metadata" aria-label="독수리 믹스"><source src="eagle-game.wav" type="audio/wav"></audio></section>
 <section><h2>곰 · 1.10초 · 수정본</h2><audio id="bear" controls playsinline preload="metadata" aria-label="곰 믹스"><source src="bear-game-v2.wav" type="audio/wav"></audio></section>
-<p id="status" role="status" aria-live="polite"></p><footer>사용자 승인 완료 · 늑대/독수리 및 곰 수정본<br><a href="credits.html">음원 출처</a></footer></main>
+<p id="status" role="status" aria-live="polite"></p><footer>사용자 승인 완료 · 늑대/독수리 및 곰 수정본<br><a href="credits.html">음원 출처</a><br><a href="purchase-hire.html?v=1">구매·용병 고용 효과음 새로 듣기</a></footer></main>
 <script>
 const tracks=[...document.querySelectorAll('audio')];const status=document.getElementById('status');
 tracks.forEach(a=>{a.volume=.65;a.addEventListener('play',()=>{tracks.forEach(b=>{if(b!==a)b.pause();});status.textContent=a.getAttribute('aria-label')+' 재생 중';});a.addEventListener('ended',()=>{status.textContent='재생 완료';});a.addEventListener('error',()=>{status.textContent='재생이 어려우면 음원만 바로 열기를 눌러 주세요.';});});

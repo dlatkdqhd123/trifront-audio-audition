@@ -8,7 +8,7 @@
 <section><h2>불꽃 정령 · 0.90초</h2><p>불이 붙는 소리 + 두툼하게 솟는 화염</p><audio id="flame-spirit" controls playsinline preload="metadata" aria-label="불꽃 정령 후보"><source src="flame-spirit-candidate-v1.wav" type="audio/wav"></audio><a href="flame-spirit-candidate-v1.wav">이 음원만 바로 열기</a></section>
 <section><h2>배낭 두더지 · 1.00초 · 수정본</h2><p>작은 동물이 달그락·꾸르륵거리는 짧은 목소리</p><audio id="mole" controls playsinline preload="metadata" aria-label="배낭 두더지 후보"><source src="mole-candidate-v2.wav" type="audio/wav"></audio><a href="mole-candidate-v2.wav">이 음원만 바로 열기</a></section>
 <section><h2>지뢰 · 0.55초</h2><p>짧은 장전 찰칵 + 지뢰 고정음, 폭발음 아님</p><audio id="mine" controls playsinline preload="metadata" aria-label="지뢰 후보"><source src="mine-candidate-v1.wav" type="audio/wav"></audio><a href="mine-candidate-v1.wav">이 음원만 바로 열기</a></section>
-<p id="status" role="status" aria-live="polite"></p><footer>사용자 청취 평가 대기 · 게임 미적용<br><a href="./">기존 승인 늑대·독수리·곰</a> · <a href="credits.html">음원 출처</a></footer></main>
+<p id="status" role="status" aria-live="polite"></p><footer>사용자 청취 평가 대기 · 게임 미적용<br><a href="./">기존 승인 늑대·독수리·곰</a> · <a href="credits.html">음원 출처</a><br><a href="purchase-hire.html?v=1">구매·용병 고용 효과음 새로 듣기</a></footer></main>
 <script>
 const tracks=[...document.querySelectorAll('audio')];const status=document.getElementById('status');
 tracks.forEach(a=>{a.volume=.65;a.addEventListener('play',()=>{tracks.forEach(b=>{if(b!==a)b.pause();});status.textContent=a.getAttribute('aria-label')+' 재생 중';});a.addEventListener('ended',()=>{status.textContent='재생 완료';});a.addEventListener('error',()=>{status.textContent='재생이 어려우면 음원만 바로 열기를 눌러 주세요.';});});
